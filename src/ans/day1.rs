@@ -7,7 +7,7 @@ pub fn problem1() -> Result<u32> {
     let mut a_list: Vec<u32> = vec![];
     let mut b_list: Vec<u32> = vec![];
 
-    for input_line in read_to_string("input.txt")?.lines() {
+    for input_line in read_to_string("inputs/day1.txt")?.lines() {
         let elements: Vec<&str> = input_line.split_whitespace().collect();
 
         match elements[..] {
@@ -35,7 +35,7 @@ pub fn problem2() -> Result<u32> {
     let mut a_list: Vec<u32> = vec![];
     let mut b_map = HashMap::<u32, u32>::new();
 
-    for input_line in read_to_string("input.txt")?.lines() {
+    for input_line in read_to_string("inputs/day1.txt")?.lines() {
         let elements: Vec<&str> = input_line.split_whitespace().collect();
 
         match elements[..] {
